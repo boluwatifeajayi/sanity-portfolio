@@ -1,32 +1,102 @@
 import React from "react"
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import ScriptTag from 'react-script-tag';
+
+
+
 
 export default function Navbar(){
+
+
+    function handleClick(e) {
+        // e.preventDefault();
+        const toggle = document.querySelector('.toggle')
+const navigation = document.querySelector('.navigation')
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active')
+  navigation.classList.toggle('active')
+
+  
+})
+
+      }
+
+      function refreshPage() {
+        window.location.reload(false);
+      }
+
+
+      function menuAnimation(){
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+          if(!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+          } else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;
+          }
+        });
+      }
+
+      
+     
+    
     return(
-        <header className="bg-red-600">
-            <div className="container mx-auto flex justify-between">
-                <nav className="flex">
-                    <NavLink to="/" exact activeClassName="text-white" className="inflex items-center py-7 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest">
-                        Bolu
-                    </NavLink>
-                    <NavLink to="/post" activeClassName="text-red-100 bg-red-700" className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover: text-white-800" >
-                        Blog Posts
-                    </NavLink>
-                    <NavLink to="/project" className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover: text-green-white" activeClassName="text-red-100 bg-red-700">
-                        Projects
-                    </NavLink>
-                    <NavLink to="/about" className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover: text-green-white" activeClassName="text-red-100 bg-red-700">
-                        About Me
-                    </NavLink>
-                </nav>
-                <div className="inline-flex py-3 px-3 my-6">
-                    <SocialIcon url="https://github.com/boluwatifeajayi" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}/>
-                    <SocialIcon url="https://www.instagram.com/bolu.aj/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}/>
-                    <SocialIcon url="https://www.linkedin.com/in/bolu-ajayi/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}/>
-                    
-                </div>
+        <header className="sm-nav">
+        {/* <!-- <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div> --> */}
+       
+        <nav className="small-nav">
+        <header>
+
+            <div className="menu-btn" onClick={menuAnimation}>
+                <div class="toggle menu-btn__burger" onClick={handleClick} >
             </div>
-        </header>
+      
+      
+        
+      </div>
+
+      
+      <div class="navigation">
+        <ul>
+          
+
+            <li onClick={refreshPage}><NavLink to="/" exact >Home</NavLink></li>
+            <li onClick={refreshPage}><NavLink to="/about">About Me</NavLink></li>
+            <li onClick={refreshPage}><NavLink to="/resume">My Resume</NavLink></li>
+            <li onClick={refreshPage}><NavLink to="/project">My Projects</NavLink></li>
+            
+            <li onClick={refreshPage}><NavLink to="/post">My Blog</NavLink></li>
+            <li onClick={refreshPage}><NavLink to="/contact">Contact Me</NavLink></li>
+        </ul>
+        
+      </div>
+    </header>
+            </nav>
+        
+        <div className="overlay"></div>
+        <div className="container">
+            {/* <h1 className="brand2"><NavLink to="/" exact>RESUME</NavLink></h1> */}
+            <nav className="big-nav">
+                <a href="" className="brand"><NavLink to="/">Bolu.aj</NavLink></a>
+                
+
+                <ul class="main-nav">
+                    <li onClick={refreshPage}><NavLink to="/" exact >Home</NavLink></li>
+                    <li onClick={refreshPage}><NavLink to="/about">About Me</NavLink></li>
+                    <li onClick={refreshPage}><NavLink to="/resume">My Resume</NavLink></li>
+                    <li onClick={refreshPage}><NavLink to="/project">My Projects</NavLink></li>
+                    <li onClick={refreshPage}><NavLink to="/post">My Blog</NavLink></li>
+                    <li onClick={refreshPage}><NavLink to="/contact">Contact Me</NavLink></li>
+                </ul>
+            </nav>
+        </div>
+</header>
     )
 }

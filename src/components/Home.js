@@ -1,13 +1,40 @@
 import React from "react"
-import image from "../bat.jpg"
+import {NavLink, Link} from "react-router-dom";
+import bolu from '../images/me.png';
+
 
 export default function Home(){
+    
     return (
-        <main>
-            <img src={image} alt="" className="absolute object-cover w-full h-full"/>
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-                <h1 className="text-4xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name">Aloha, I'm Bolu.</h1>
-            </section>
-        </main>
+        
+<section>
+      
+<main>
+      <div className="home-body">
+      <hr/>
+          <div className="action1">
+              
+              <img src={bolu} className="my-image" alt="bolu"/>
+          </div>
+          <div className="action2">
+            <p className="welcome">0.1 {" "}<span className="secondary">Welcome To My Portfolio Site I'm...</span></p>
+            <hr/>
+            <p className="my-name">Boluwatife <span className="secondary">Ajayi</span>.</p>
+            <p className="software">Software Developer {"</>"} </p>
+            <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
+            <div className="the-socials">
+                <a href="mailto:bolu4good@gmail.com" className="fa fa-envelope-square icon"></a>
+                <a href="https://github.com/boluwatifeajayi" target="_blank" className="fa fa-github icon" ></a>
+                <a href="https://www.instagram.com/bolu.aj/" target="_blank" className="fa fa-instagram icon"></a>
+                <a href="https://www.linkedin.com/in/bolu-ajayi/" target="_blank" className="fa fa-linkedin icon"></a>
+            </div>
+                
+          </div>
+      </div>
+</main>
+
+
+</section>
+        
     )
 }

@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react"
+import {NavLink, Link} from "react-router-dom";
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../client"
-import dark from "../dark.jpg"
+
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);
@@ -20,23 +21,43 @@ export default function About(){
         }`).then((data) => setAuthor(data[0])).catch(console.error);
     }, []);
 
-    if(!author) return <div>Loading...</div>
+    if(!author) return <div className="loading">Loading...</div>
 
     return (
-        <main className="relative">
-            <img src={dark} alt="" className="absolute w-full"/>
-            <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
-                    <img src={urlFor(author.authorImage).url()} className="rounded w-32 lg:w-64 lg:h-64 mr-8" alt={author.name}/>
-                    <div className="text-lg flex flex-col justify-center">
-                        <h1 className="cursive text-6xl text-green-300 mb-4">
+        <main className="">
+            
+            <div className="">
+                <section>
+
+                    <div className="about-content">
+                   
+
+                    <div className="about-action">
+                    <h1 className="welcome about-head">0.2 {" "}<span className="secondary">About Me...</span></h1>
+                    <hr/>
+
+                        <h1 className="about-name">
                             Hey there. I'm {" "} 
-                            <span className="text-green-100">{author.name}</span>
+                            <span className="secondary">{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl text-white">
+                        <div className="about-bio">
                             <BlockContent blocks={author.bio} projectId="x230fyvv" dataset="production" />
+                            <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
                         </div>
                     </div>
+                    <div className="about-action2">
+                        
+                        <img src={urlFor(author.authorImage).url()} className="my-image" alt={author.name}/>
+                    </div>
+                    
+                    </div>
+
+                     
+                    
+                 
+
+                    
+                    
                 </section>
             </div>
         </main>

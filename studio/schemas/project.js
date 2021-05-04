@@ -16,6 +16,10 @@ export default {
         type: "string"
     },
     {
+        name: "tools",
+        type: "string"
+    },
+    {
         name: "description",
         type: "text"
     },
@@ -33,6 +37,10 @@ export default {
     },
     {
         name:"link",
+        type: "url", 
+    },
+    {
+        name:"gitlink",
         type: "url", 
     },
     {

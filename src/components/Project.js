@@ -13,45 +13,47 @@ export default function Project(){
             description,
             projectType,
             project,
+            tools,
             link,
+            gitlink,
             tags
         }`).then((data) => setProjectData(data)).catch(console.error);
     }, []);
 
     return (
-        <main className="bg-green-100 min-h-screen p-12">
+        <main className="">
             <section className="container mx-auto ">
-                <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome To My Projects Page</h2>
-                <section className="grid grid-cols-2 gap-8">
+            <h1 className="welcome about-head resume-head">0.4 {" "}<span className="secondary">The Projects...</span></h1>
+            <hr/>
+                
+                <section className="">
                     {projectData && projectData.map((project, index) => (
-                    <article className="relative rounded-lg shadow-xl bg-white p-16">
-                        <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
-                            <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer">{project.title}</a>
-                        </h3>
-                        <div className="text-gray-500 text-xs space-x-4">
-                            <span>
-                                <strong className="font-bold">Finished On</strong>: {" "}{new Date(project.date).toLocaleDateString()}
-                            </span>
-                            <span>
-                                <strong className="font-bold">Company</strong>:{" "}
-                                {project.place}
-                            </span>
-                            <span>
-                                <strong className="font-bold">Type</strong>:{" "}{project.projectType}
-                            </span>
-                            <p className="my-6 text-lg text-gray-700 leading-relaxed">{project.description}</p>
-                           <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
-                               View The Project{" "}
-                            <span role="img" aria-label="right pointer">
-                               👉   
-                            </span>
-                           </a>
-                            
-                        </div>
-                    </article>
+                    
+                    <div class="card">    
+                    <div class="container">
+                        <h4 className="card-title">
+                        <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                        </h4>
+                        <p class
+                        ="project-type">
+                        Type:{" "}{project.projectType}
+                        </p>
+                        <p className="card-sub">Tech : {project.place}</p>
+                        <p className="card-content">{project.description}</p>   
+                        {/* <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer" className="">
+                   View The Project{" "}
+                <span role="img" aria-label="right pointer">
+                   👉   
+                </span>
+               </a>  */}
+
+               <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer" className="btn r-btn link-btn">Check Out {" "} <i className="fa fa-link"></i></a><a href={project.gitlink} alt={project.title} target="_blank" rel="noopener noreferrer" className="btn p-btn git-btn">Github   {" "}<i className="fa fa-github"></i></a> 
+                    </div>
+                </div>
+                   
                     ))}
                 </section>
+               
             </section>
         </main>
         )
