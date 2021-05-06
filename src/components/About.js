@@ -29,7 +29,7 @@ export default function About(){
             <div className="">
                 <section>
 
-                    <div className="about-content">
+                    <div className="about-content aa">
                    
 
                     <div className="about-action">
@@ -51,6 +51,34 @@ export default function About(){
                     </div>
                     
                     </div>
+
+
+                    <div className="about-content bb">
+
+
+                    <div className="about-action2 bb">
+                        
+                        <img src={urlFor(author.authorImage).url()} className="my-image" alt={author.name}/>
+                    </div>
+                   
+
+                    <div className="about-action bb">
+                    <h1 className="welcome about-head">0.2 {" "}<span className="secondary">About Me...</span></h1>
+                    <hr/>
+
+                        <h1 className="about-name">
+                            Hey there. I'm {" "} 
+                            <span className="secondary">{author.name}</span>
+                        </h1>
+                        <div className="about-bio">
+                            <BlockContent blocks={author.bio} projectId="x230fyvv" dataset="production" />
+                            <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
+
 
                      
                     

@@ -21,12 +21,12 @@ export default function Project(){
     }, []);
 
     return (
-        <main className="">
+        <main className="project-section">
             <section className="container mx-auto ">
             <h1 className="welcome about-head resume-head">0.4 {" "}<span className="secondary">The Projects...</span></h1>
             <hr/>
                 
-                <section className="">
+                <section>
                     {projectData && projectData.map((project, index) => (
                     
                     <div class="card">    

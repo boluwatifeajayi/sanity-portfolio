@@ -11,7 +11,7 @@ export default function Home(){
       
 <main>
       <div className="home-body">
-      <hr/>
+     
           <div className="action1">
               
               <img src={bolu} className="my-image" alt="bolu"/>
@@ -20,7 +20,7 @@ export default function Home(){
             <p className="welcome">0.1 {" "}<span className="secondary">Welcome To My Portfolio Site I'm...</span></p>
             <hr/>
             <p className="my-name">Boluwatife <span className="secondary">Ajayi</span>.</p>
-            <p className="software">Software Developer {"</>"} </p>
+            <p className="software">An Enthusiastic Software Developer {"</>"} </p>
             <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
             <div className="the-socials">
                 <a href="mailto:bolu4good@gmail.com" className="fa fa-envelope-square icon"></a>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../client"
-import dark from "../dark.jpg"
+
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);
@@ -53,9 +53,10 @@ export default function About(){
 
         </ul>
       </div>
+      <hr className="aline"/>
       <div class="contact">
         <h3 className="head-contact">Send Me A Message</h3>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" action="POST" data-netlify="true">
           <p>
             <label>Name *</label>
             <input type="text" name="name" required/>

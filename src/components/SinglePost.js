@@ -34,12 +34,12 @@ export default function SinglePost(){
     if(!singlePost) return <div className="loading">Loading...</div>
 
     return (
-        <main className="min-h-screen p-12">
+        <main className="min-h-screen p-2 single-post">
             <article className="post container shadow-lg mx-auto rounded-lg">
                 <header className="relative">
-                    <div className="absolute h-full w-full flex items-center justify-center p-8">
+                    <div className="absolute h-full w-full flex items-center justify-center p-3">
                         <div className="post-title-bg">
-                            <h1 className="cursive text-3xl lg:text-6xl mb-4">{singlePost.title}</h1>
+                            <h1 className="cursive pot-title text-3xl lg:text-6xl mb-4">{singlePost.title}</h1>
                             <div className="flex justify-center text-gray-800"><img src={urlFor(singlePost.authorImage).url()} alt={singlePost.name} className="w-10 h-10 rounded-full"/>
                             <p className="post-author cursive flex items-center pl-2 text-2xl">{singlePost.name}</p>
                             </div>
@@ -49,7 +49,7 @@ export default function SinglePost(){
                     <img src={singlePost.mainImage.asset.url} alt={singlePost.title} className="post-img w-full object-cover rounded-t" style={{height: "300px"}} />
                     <p></p>
                 </header>
-                <div className="post-body px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+                <div className="post-body px-4 lg:px-20 py-8 lg:py-15 prose lg:prose-xl max-w-full">
                     <BlockContent blocks={singlePost.body} projectId="x230fyvv" dataset="production"/>
                 </div>
             </article>

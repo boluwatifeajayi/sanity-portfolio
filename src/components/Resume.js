@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
+import cv from '../images/bolusCV.pdf';
 
 
 export default function Resume(){
@@ -29,6 +30,8 @@ export default function Resume(){
                     
                     <hr/>
 
+                    
+
 
                     <div className="resume-content">
 
@@ -49,7 +52,7 @@ export default function Resume(){
                                 </div>
                             </div>
                             ))}
-                                <a className="btn p-btn cv resume-content">View My CV</a>
+                               
                             </div>
 
                             
@@ -74,25 +77,30 @@ export default function Resume(){
                             <h3 className="main-resume-header">Technical Skill Set</h3>
                             <div>
                             <div class="card">
-                                
+                            {resumeData && resumeData.map((resume, index) => (
                                 <div class="container">
-                                    <ul>
+                                   
+                                        
+                                   <h4 className="card-title">{resume.SklTitle}</h4>
+                                    <p className="card-sub">{resume.SklSub}</p>
+                                    <p className="card-content">{resume.SklContent}</p>  
+                                         
+                                    
+                                    
 
-
-                                        <li>HTML</li>
-                                        <li>css</li>    
-                                        <li>javascript</li>    
-                                        <li>react</li> 
-                                        {resumeData && resumeData.map((resume, index) => (
-                                        <p className="card-content">{resume.sklContent}</p> 
-                                        ))}   
-                                    </ul>
                                     
                                 </div>
+
+                            ))}
+
+                                
                             </div>
                             </div>
                         
                     </div>
+
+                    
                 </div>
+                <a href={cv} className="p-btn cv-btn down" target="_blank" download>Download My CV</a>
     </div>
 }
