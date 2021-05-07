@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react"
-import {NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../client"
 
@@ -42,7 +42,7 @@ export default function About(){
                         </h1>
                         <div className="about-bio">
                             <BlockContent blocks={author.bio} projectId="x230fyvv" dataset="production" />
-                            <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
+                            <span className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></span><span className="btn p-btn"><NavLink to="/project">View Projects</NavLink></span>
                         </div>
                     </div>
                     <div className="about-action2">
@@ -72,7 +72,7 @@ export default function About(){
                         </h1>
                         <div className="about-bio">
                             <BlockContent blocks={author.bio} projectId="x230fyvv" dataset="production" />
-                            <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
+                            <span className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></span><span className="btn p-btn"><NavLink to="/project">View Projects</NavLink></span>
                         </div>
                     </div>
                     

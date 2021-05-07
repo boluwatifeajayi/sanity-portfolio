@@ -1,13 +1,10 @@
 import React, {useEffect, useState} from "react"
-import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../client"
 
-import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source){
-    return builder.image(source)
-}
+
+
+
 
 export default function About(){
 
@@ -43,13 +40,14 @@ export default function About(){
           <li>
             <div className="the-socials contact-socials">
                 <p>Follow Me</p>
-                <a href="" className="fa fa-github icon secondary" ></a>
-                <a href="" className="fa fa-instagram icon secondary"></a>
-                <a href="" className="fa fa-linkedin icon secondary"></a>
+              
+                <a href="https://github.com/boluwatifeajayi" target="_blank" rel="noreferrer" ><i className="fa fa-github icon secondary" ></i></a>
+                <a href="https://www.instagram.com/bolu.aj/" target="_blank" rel="noreferrer" ><i className="fa fa-instagram icon secondary"></i></a>
+                <a href="https://www.linkedin.com/in/bolu-ajayi/" target="_blank" rel="noreferrer" ><i className="fa fa-linkedin icon secondary"></i></a>
             </div>
         </li>
 
-          <a className="btn p-btn">Contact Me Now</a>
+          <a href="mailto:bolu4good@gmail.com" className="btn p-btn">Contact Me Now</a>
 
         </ul>
       </div>
@@ -73,11 +71,11 @@ export default function About(){
             <label>Phone Number</label>
             <input type="text" name="phone" />
           </p> */}
-          <p class="full">
+          <p className="full">
             <label>Message *</label>
             <textarea name="message" rows="5" required></textarea>
           </p>
-          <p class="full">
+          <p className="full">
             <button onClick={submit}>Send{" "} <i className="fa fa-paper-plane"></i></button>
           </p>
         </form>

@@ -101,6 +101,6 @@ export default function Resume(){
 
                     
                 </div>
-                <a href={cv} className="p-btn cv-btn down" target="_blank" download>Download My CV</a>
+                <a href={cv} className="p-btn cv-btn down" target="_blank" rel="noreferrer" download>Download My CV</a>
     </div>
 }

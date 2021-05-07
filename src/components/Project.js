@@ -29,12 +29,12 @@ export default function Project(){
                 <section>
                     {projectData && projectData.map((project, index) => (
                     
-                    <div class="card">    
-                    <div class="container">
+                    <div className="card">    
+                    <div className="container">
                         <h4 className="card-title">
                         <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer">{project.title}</a>
                         </h4>
-                        <p class
+                        <p className
                         ="project-type">
                         Type:{" "}{project.projectType}
                         </p>

@@ -1,5 +1,5 @@
 import React from "react"
-import {NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import bolu from '../images/me.png';
 
 
@@ -21,12 +21,12 @@ export default function Home(){
             <hr/>
             <p className="my-name">Boluwatife <span className="secondary">Ajayi</span>.</p>
             <p className="software">An Enthusiastic Software Developer {"</>"} </p>
-            <a className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></a><a className="btn p-btn"><NavLink to="/project">View Projects</NavLink></a>
+            <span className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></span><span className="btn p-btn"><NavLink to="/project">View Projects</NavLink></span>
             <div className="the-socials">
-                <a href="mailto:bolu4good@gmail.com" className="fa fa-envelope-square icon"></a>
-                <a href="https://github.com/boluwatifeajayi" target="_blank" className="fa fa-github icon" ></a>
-                <a href="https://www.instagram.com/bolu.aj/" target="_blank" className="fa fa-instagram icon"></a>
-                <a href="https://www.linkedin.com/in/bolu-ajayi/" target="_blank" className="fa fa-linkedin icon"></a>
+                <a href="mailto:bolu4good@gmail.com"><i className="fa fa-envelope-square icon"></i></a>
+                <a href="https://github.com/boluwatifeajayi" target="_blank" rel="noreferrer"  ><i className="fa fa-github icon"></i></a>
+                <a href="https://www.instagram.com/bolu.aj/" target="_blank" rel="noreferrer" ><i className="fa fa-instagram icon"></i></a>
+                <a href="https://www.linkedin.com/in/bolu-ajayi/" target="_blank" rel="noreferrer" ><i className="fa fa-linkedin icon"></i></a>
             </div>
                 
           </div>

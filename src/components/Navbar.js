@@ -1,7 +1,5 @@
 import React from "react"
-import {NavLink, Link} from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
-import ScriptTag from 'react-script-tag';
+import {NavLink} from "react-router-dom";
 import cv from '../images/bolusCV.pdf';
 
 
@@ -33,23 +31,23 @@ export default function Navbar(){
     return(
 
 
-<header class="lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2">
-    <div class="flex-1 flex justify-between items-center">
-      <a className="btn btn-p"  onClick={refreshPage}>
+<header className="lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2">
+    <div className="flex-1 flex justify-between items-center">
+      <span className="btn btn-p"  onClick={refreshPage}>
         <NavLink to="/">BOLU.AJ</NavLink> 
-      </a>
+      </span>
   </div>
 
-   <label for="menu-toggle" class="men">
+   <label htmlFor="menu-toggle" className="men">
     <i className="fa fa-bars my-menu men " id="menuBtn" onClick={Open}></i>
     <i className="fa fa-close my-menu men" id="closeBtn" onClick={Close}></i>
 
    </label>
-  <input class="hidden" type="checkbox" id="menu-toggle" />
+  <input className="hidden" type="checkbox" id="menu-toggle" />
 
-  <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+  <div className="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
     <nav>
-      <ul class="lg:flex items-center text-base">
+      <ul className="lg:flex items-center text-base">
                  
              <li onClick={refreshPage}><NavLink to="/about">ABOUT ME</NavLink></li>
              <li onClick={refreshPage}><NavLink to="/resume">MY RESUME</NavLink></li>
@@ -59,7 +57,7 @@ export default function Navbar(){
              <li onClick={refreshPage}><NavLink to="/contact">CONTACT ME</NavLink></li>
       </ul>
     </nav>
-    <a href={cv} className="p-btn cv-btn" target="_blank">View CV</a>
+    <a href={cv} className="p-btn cv-btn" target="_blank" rel="noreferrer">View CV</a>
 
   </div>
 
