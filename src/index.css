@@ -547,28 +547,6 @@ footer{
 
 /* LARGE SCREENS */
 @media(min-width:900px){
-
-  .my-menu{
-    display: block;
-    color: #1a8cff;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  
-  nav ul{
-    margin-top: 40px;
-  }
-  
-  nav ul li{
-    font-size: 30px;
-  }
-  
-  .down{
-    margin-left: 0px;
-    margin-bottom: 50px;
-  }
-  
   .wrapper{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -590,24 +568,75 @@ footer{
     font-size: 30px;
     cursor: pointer;
   }
-
   .fa-close{
     display: none;
   }
-  
-  nav ul{
-    margin-top: 40px;
+  .home-body{
+    display: block;
+    /* margin-top: 70px; */
+  }
+  .my-name{
+    font-size: 60px;
+    font-weight: lighter;
+    /* padding-bottom: 14px; */
+    padding-top: 10px;
   }
   
-  nav ul li{
-    font-size: 30px;
+  .secondary{
+    color: #1a8cff;
   }
   
-  .down{
-    margin-left: 0px;
-    margin-bottom: 50px;
+  .software{
+    font-size: 23px;
+    color: rgb(172, 172, 180);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   
+  .aline{
+    display: block;
+  }
+  .r-btn{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  
+  .p-btn{
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #1a8cff;
+    color: #1a8cff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  
+  }
+  .my-image{
+    border: 2px solid #1a8cff;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .welcome{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media(max-width: 750px){
   .menu-btn{
     display: block;
     
@@ -630,7 +659,7 @@ footer{
   }
   
   .my-name{
-    font-size: 63px;
+    font-size: 60px;
     font-weight: lighter;
     /* padding-bottom: 14px; */
     padding-top: 10px;
