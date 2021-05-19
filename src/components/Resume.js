@@ -81,9 +81,9 @@ export default function Resume(){
                                 <div class="container">
                                    
                                         
-                                   <h4 className="card-title">{resume.SklTitle}</h4>
-                                    <p className="card-sub">{resume.SklSub}</p>
-                                    <p className="card-content">{resume.SklContent}</p>  
+                                   <h4 className="card-title">{resume.sklTitle}</h4>
+                                    <p className="card-sub">{resume.sklSub}</p>
+                                    <p className="card-content">{resume.sklContent}</p>  
                                          
                                     
                                     
