@@ -76,8 +76,9 @@ export default function Resume(){
 
                             <h3 className="main-resume-header">Technical Skill Set</h3>
                             <div>
-                            <div class="card">
+                            
                             {resumeData && resumeData.map((resume, index) => (
+                                <div class="card">
                                 <div class="container">
                                    
                                         
@@ -90,17 +91,20 @@ export default function Resume(){
 
                                     
                                 </div>
+                                </div>
+                                
 
                             ))}
 
                                 
-                            </div>
-                            </div>
+                            
                         
-                    </div>
+            
 
                     
                 </div>
                 <a href={cv} className="p-btn cv-btn down" target="_blank" rel="noreferrer" download>Download My CV</a>
+    </div>
+    </div>
     </div>
 }
