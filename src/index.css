@@ -547,6 +547,28 @@ footer{
 
 /* LARGE SCREENS */
 @media(min-width:900px){
+
+  .my-menu{
+    display: block;
+    color: #1a8cff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  
+  nav ul{
+    margin-top: 40px;
+  }
+  
+  nav ul li{
+    font-size: 30px;
+  }
+  
+  .down{
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  
   .wrapper{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -561,8 +583,153 @@ footer{
   }
 }
 
+@media(max-width: 1024px){
+  .my-menu{
+    display: block;
+    color: #1a8cff;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-@media(max-width: 900px){
+  .fa-close{
+    display: none;
+  }
+  
+  nav ul{
+    margin-top: 40px;
+  }
+  
+  nav ul li{
+    font-size: 30px;
+  }
+  
+  .down{
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  
+  .menu-btn{
+    display: block;
+    
+  }
+
+  ul li{
+    padding-bottom: 20px;
+  }
+  .home-body{
+    display: block;
+    /* margin-top: 70px; */
+  }
+  
+  .action1{
+    flex: block;
+  }
+  
+  .action2{
+    flex: block;
+  }
+  
+  .my-name{
+    font-size: 63px;
+    font-weight: lighter;
+    /* padding-bottom: 14px; */
+    padding-top: 10px;
+  }
+  
+  .secondary{
+    color: #1a8cff;
+  }
+  
+  .software{
+    font-size: 23px;
+    color: rgb(172, 172, 180);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  .aline{
+    display: block;
+  }
+  .r-btn{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  
+  .p-btn{
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #1a8cff;
+    color: #1a8cff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  
+  }
+
+  
+  .the-socials{
+    margin-right: 8px;
+  }
+  
+  .icon{
+    font-size: 25px;
+    margin-right: 25px;
+    margin-top: 8px;
+  }
+  
+  .icon:hover{
+    color: #1a8cff;
+  }
+  
+  .my-image{
+    border: 2px solid #1a8cff;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .welcome{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .r-btn{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  
+  .p-btn{
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #1a8cff;
+    color: #1a8cff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+  
+  }
+
+
+}
+
+@media(max-width: 750px){
   .menu-btn{
     display: block;
   }
