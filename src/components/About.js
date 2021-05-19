@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../client"
 
+
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);
@@ -37,7 +38,7 @@ export default function About(){
                     <hr/>
 
                         <h1 className="about-name">
-                            Hey there. I'm {" "} 
+                            Hello!. I'm {" "} 
                             <span className="secondary">{author.name}</span>
                         </h1>
                         <div className="about-bio">
@@ -88,6 +89,8 @@ export default function About(){
                     
                 </section>
             </div>
+           
         </main>
+       
     )
 }

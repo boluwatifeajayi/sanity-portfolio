@@ -5,6 +5,7 @@ import Post from "./components/Post";
 import Project from "./components/Project";
 import SinglePost from "./components/SinglePost";
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 
@@ -24,6 +25,7 @@ function App(){
                 <Route component={Resume} path='/resume' />
                 <Route component={Contact} path='/contact' />
             </Switch>
+         <Footer/> 
         </BrowserRouter>
         
     )

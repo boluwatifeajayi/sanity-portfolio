@@ -167,13 +167,21 @@ section {
   flex: 40%;
 }
 
+.blog-section{
+  line-height: 3px;
+}
+
+.blog-section b{
+  margin-top: 40px;
+}
+
 .action2{
   flex: 60%;
 }
 
 .my-name{
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 70px;
+  font-weight: lighter;
   color: #fff;
 }
 
@@ -182,7 +190,7 @@ section {
 }
 
 .software{
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .r-btn{
@@ -222,7 +230,7 @@ section {
 
 .welcome{
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -233,6 +241,11 @@ section {
 
 .aa{
   display: block;
+}
+
+footer{
+  background-color: rgb(21, 26, 36);
+  padding-top: 10px;
 }
 
 .about-content{
@@ -264,6 +277,8 @@ section {
   margin-top: 10px;
   
 }
+
+
 
 .loading{
   font-size: 20px;
@@ -351,6 +366,11 @@ section {
 
 /* project section */
 
+.proj-sec{
+  
+  margin-bottom: 90px;
+}
+
 .project-type{
   font-size: 13px;
 }
@@ -423,6 +443,7 @@ section {
 
 .wrapper{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-bottom: 30px;
 }
 
 .wrapper > *{
@@ -443,6 +464,7 @@ section {
 }
 .contact{
   background:rgb(35, 41, 53);
+ 
 }
 
 /* FORM STYLES */
@@ -512,6 +534,15 @@ section {
   font-size: 25px;
 }
 
+/* footer */
+.footer ul li {
+  display: inline-block;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
 
 
 /* LARGE SCREENS */
@@ -566,9 +597,9 @@ section {
   
   .my-name{
     font-size: 40px;
-    font-weight: bold;
+    font-weight: lighter;
     /* padding-bottom: 14px; */
-    padding-top: 20px;
+    padding-top: 10px;
   }
   
   .secondary{
@@ -578,7 +609,10 @@ section {
   .software{
     font-size: 18px;
     color: rgb(172, 172, 180);
-    padding: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   
   .aline{
@@ -587,7 +621,11 @@ section {
   .r-btn{
     margin-right: 10px;
     font-size: 15px;
-    padding: 12px;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   
   .p-btn{
@@ -595,8 +633,10 @@ section {
     background-color: transparent;
     border: 1px solid #1a8cff;
     color: #1a8cff;
-    padding: 12px;
-  
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
   
   }
 
@@ -608,7 +648,7 @@ section {
   .icon{
     font-size: 25px;
     margin-right: 25px;
-    margin-top: 20px;
+    margin-top: 8px;
   }
   
   .icon:hover{
@@ -618,10 +658,11 @@ section {
   .my-image{
     border: 2px solid #1a8cff;
     border-radius: 50%;
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
   
   .welcome{
@@ -786,6 +827,7 @@ section {
 .post-body img{
   width: 100%;
   height: 80%;
+
 }
 
 #closeBtn{
@@ -805,6 +847,9 @@ section {
   font-weight: bold;
 }
 
+.footer-love{
+  font-size: 12px;
+}
 .post{
  width: 100%;
 
@@ -818,6 +863,7 @@ section {
 
 .post-body{
   font-size: 17px;
+  padding: 15px;
 }
 
 .pot-title{
@@ -920,6 +966,16 @@ section {
 .contact-socials a{
   font-size: 25px;
 }
+
+/* footer */
+.footer ul li {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 12px;
+  
+}
+
+
 
 .my-menu{
   display: block;

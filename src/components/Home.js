@@ -1,15 +1,19 @@
 import React from "react"
 import {NavLink} from "react-router-dom";
+import Typewriter from "typewriter-effect";
+
 import bolu from '../images/me.png';
 
 
 export default function Home(){
+
+    
     
     return (
         
 <section>
       
-<main>
+<main className="home-footer">
       <div className="home-body">
      
           <div className="action1">
@@ -19,8 +23,23 @@ export default function Home(){
           <div className="action2">
             <p className="welcome">0.1 {" "}<span className="secondary">Welcome To My Portfolio Site I'm...</span></p>
             <hr/>
-            <p className="my-name">Boluwatife <span className="secondary">Ajayi</span>.</p>
-            <p className="software">An Enthusiastic Software Developer {"</>"} </p>
+            
+                <p className="my-name">Boluwatife <span className="secondary">Ajayi</span>.</p>
+        
+            
+            <p className="software"><Typewriter
+  
+                        onInit={(typewriter)=> {
+
+                        typewriter
+                        
+                        .typeString("Developer and Designer") 
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Software Developer </>")
+                        .start();
+                        }}
+                        /></p>
             <span className="btn r-btn"><NavLink to="/resume">View Resume</NavLink></span><span className="btn p-btn"><NavLink to="/project">View Projects</NavLink></span>
             <div className="the-socials">
                 <a href="mailto:bolu4good@gmail.com"><i className="fa fa-envelope-square icon"></i></a>

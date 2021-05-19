@@ -22,7 +22,7 @@ export default function Project(){
 
     return (
         <main className="project-section">
-            <section className="container mx-auto ">
+            <section className="proj-sec container mx-auto ">
             <h1 className="welcome about-head resume-head">0.4 {" "}<span className="secondary">The Projects...</span></h1>
             <hr/>
                 
