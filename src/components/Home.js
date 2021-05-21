@@ -36,6 +36,9 @@ export default function Home(){
                         .typeString("Developer and Designer") 
                         .pauseFor(1000)
                         .deleteAll()
+                        .typeString("Freelancer") 
+                        .pauseFor(1000)
+                        .deleteAll()
                         .typeString("Software Developer </>")
                         .start();
                         }}
