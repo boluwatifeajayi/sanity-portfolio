@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
+import {NavLink} from "react-router-dom";
 import cv from '../images/bolusCV.pdf';
 
 
@@ -103,7 +104,10 @@ export default function Resume(){
 
                     
                 </div>
-                <a href={cv} className="p-btn cv-btn down" target="_blank" rel="noreferrer" download>Download My CV</a>
+                <div className="under">
+                <a href={cv} className="p-btn cv-btn down"  target="_blank" rel="noreferrer" download>Download My CV</a><br/><span className="btn r-btn auto"><NavLink to="/project">View Projects</NavLink></span>
+                </div>
+                
     </div>
     </div>
     </div>

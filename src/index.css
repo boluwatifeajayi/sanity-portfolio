@@ -193,6 +193,8 @@ section {
   font-size: 30px;
 }
 
+
+
 .r-btn{
   margin-right: 10px;
   font-size: 20px;
@@ -297,7 +299,11 @@ footer{
 
 .down{
   margin-left: 500px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+.auto{
+  margin-left: 500px;
+  margin-bottom: 30px;
 }
 
 /* resume section */
@@ -391,6 +397,9 @@ footer{
 
 .link-btn{
   font-size: 15px;
+}
+.proj-sec{
+  margin-bottom: 30px;
 }
 
 /* blog section */
