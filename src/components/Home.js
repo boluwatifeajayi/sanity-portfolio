@@ -33,10 +33,10 @@ export default function Home(){
 
                         typewriter
                         
-                        .typeString("Developer and Designer") 
+                        .typeString("Programmer") 
                         .pauseFor(1000)
                         .deleteAll()
-                        .typeString("Freelancer") 
+                        .typeString("Designer") 
                         .pauseFor(1000)
                         .deleteAll()
                         .typeString("Software Developer </>")

@@ -1,6 +1,6 @@
 import React from "react"
 import {NavLink} from "react-router-dom";
-import cv from '../images/bolusCV.pdf';
+import cv from '../images/resume.pdf';
 
 
 

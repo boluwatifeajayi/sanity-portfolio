@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
 import {NavLink} from "react-router-dom";
-import cv from '../images/bolusCV.pdf';
+import cv from '../images/resume.pdf';
 
 
 export default function Resume(){
